@@ -1993,7 +1993,7 @@ button {
 .footer-bottom-links a:hover { color: #2A2622; }
 
 .footer-sticky-bar {
-  background: #007f5f;
+  background: var(--primary-color);
   color: #fff;
   padding: 10px;
   text-align: center;
