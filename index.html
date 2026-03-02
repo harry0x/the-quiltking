@@ -1,725 +1,1497 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HomeMonde - Premium Home Textiles</title>
-  <meta name="description" content="Premium home textiles crafted with care. Transform your space with our curated collection of curtains, bedsheets, and décor." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <title>HomeMonde - Premium Home Textiles</title>
+    <meta
+      name="description"
+      content="Premium home textiles crafted with care. Transform your space with our curated collection of curtains, bedsheets, and décor."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+      <p>USE CODE <strong>HOMEMONDE5</strong> FOR EXTRA DISCOUNT AT CHECKOUT</p>
+    </div>
 
-  <!-- Announcement Bar -->
-  <div class="announcement-bar">
-    <p>USE CODE <strong>HOMEMONDE5</strong> FOR EXTRA DISCOUNT AT CHECKOUT</p>
-  </div>
-
-  <!-- Navigation -->
-  <header class="navbar" id="navbar">
-    <div class="container nav-container">
-      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
-        <i class="fas fa-bars"></i>
-      </button>
-      <a href="#" class="logo"><span style="color: var(--primary-color);">Home</span>Monde</a>
-      <nav class="nav-links" id="navLinks">
-        <!-- LIVING -->
-        <div class="nav-item">
-          <a href="#" class="nav-link">LIVING</a>
-          <div class="mega-menu">
-            <div class="container mega-menu-container">
-              <div class="mega-menu-sidebar">
-                <a href="#" class="sidebar-btn">Trending Now</a>
-                <a href="#" class="sidebar-btn">New Launches</a>
-                <a href="#" class="sidebar-btn">Sales & Offers</a>
-              </div>
-              <div class="mega-menu-grid">
-                <div class="mega-menu-col">
-                  <h4>Curtains</h4>
-                  <ul>
-                    <li><a href="#">All Curtains</a></li>
-                    <li><a href="#">Sheer Curtains</a></li>
-                    <li><a href="#">Solid Sheer Curtains</a></li>
-                    <li><a href="#">Printed Sheer Curtains</a></li>
-                    <li><a href="#">Blackout Curtains</a></li>
-                    <li><a href="#">Solid Blackout Curtains</a></li>
-                    <li><a href="#">Printed Blackout Curtains</a></li>
-                    <li><a href="#">Printed Semi Blackout</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Cushion Cover</h4>
-                  <ul>
-                    <li><a href="#">All Cushion Cover</a></li>
-                    <li><a href="#">Printed Cushion Cover</a></li>
-                    <li><a href="#">Velvet Cushion Cover</a></li>
-                    <li><a href="#">Hand Block Printed Cushion Cover</a></li>
-                    <li><a href="#">Foil Print Cushion Cover</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Bolster Covers</h4>
-                  <ul>
-                    <li><a href="#">All Bolster Covers</a></li>
-                    <li><a href="#">Satin Stripes Bolster Covers</a></li>
-                    <li><a href="#">Printed Bolster Covers</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Throw</h4>
-                  <ul>
-                    <li><a href="#">All Throw</a></li>
-                    <li><a href="#">Woven Throw</a></li>
-                    <li><a href="#">Kantha Throw</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- BEDDING -->
-        <div class="nav-item">
-          <a href="#" class="nav-link">BEDDING</a>
-          <div class="mega-menu">
-            <div class="container mega-menu-container">
-              <div class="mega-menu-sidebar">
-                <a href="#" class="sidebar-btn">Trending Now</a>
-                <a href="#" class="sidebar-btn">New Launches</a>
-                <a href="#" class="sidebar-btn">Sales & Offers</a>
-              </div>
-              <div class="mega-menu-grid">
-                <div class="mega-menu-col">
-                  <h4>Bedsheets</h4>
-                  <ul>
-                    <li><a href="#">All Bedsheets</a></li>
-                    <li><a href="#">Printed Bedsheets</a></li>
-                    <li><a href="#">Floral Bedsheets</a></li>
-                    <li><a href="#">Solid Bedsheets</a></li>
-                    <li><a href="#">Satin Stripes Bedsheets</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Fitted Bedsheet</h4>
-                  <ul>
-                    <li><a href="#">All Fitted Sheet</a></li>
-                    <li><a href="#">Solid fitted sheet</a></li>
-                    <li><a href="#">Satin Stripe Fitted sheet</a></li>
-                    <li><a href="#">Printed Fitted Sheet</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Mattress Protector</h4>
-                  <ul>
-                    <li><a href="#">All Mattress Protectors</a></li>
-                    <li><a href="#">Terry Mattress Protector</a></li>
-                    <li><a href="#">Quilted Mattress Protector</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Dohars</h4>
-                  <ul>
-                    <li><a href="#">All Dohars</a></li>
-                    <li><a href="#">Printed Dohars</a></li>
-                    <li><a href="#">Satin Stripes Dohars</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Blanket</h4>
-                  <ul>
-                    <li><a href="#">All Blankets</a></li>
-                    <li><a href="#">Plush Blanket</a></li>
-                    <li><a href="#">Sherpa Blanket</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Duvet Cover</h4>
-                  <ul>
-                    <li><a href="#">All Duvet Cover</a></li>
-                    <li><a href="#">Satin Strip Duvet Cover</a></li>
-                    <li><a href="#">Solid Duvet Cover</a></li>
-                    <li><a href="#">Printed Duvet Cover</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Pillow Covers</h4>
-                  <ul>
-                    <li><a href="#">Cotton</a></li>
-                    <li><a href="#">Block Print</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Mattress Cover</h4>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Comforter</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- FLOORING -->
-        <div class="nav-item">
-          <a href="#" class="nav-link">FLOORING</a>
-          <div class="mega-menu">
-            <div class="container mega-menu-container">
-              <div class="mega-menu-sidebar">
-                <a href="#" class="sidebar-btn">Trending Now</a>
-                <a href="#" class="sidebar-btn">New Launches</a>
-                <a href="#" class="sidebar-btn">Sales & Offers</a>
-              </div>
-              <div class="mega-menu-grid">
-                <div class="mega-menu-col">
-                  <h4>All Rugs</h4>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Cotton Rug</h4>
-                  <ul>
-                    <li><a href="#">Diamond Rugs</a></li>
-                    <li><a href="#">Herringbone Rugs</a></li>
-                    <li><a href="#">Plaid Rug</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Jute Rugs</h4>
-                  <ul>
-                    <li><a href="#">All Jute Rugs</a></li>
-                    <li><a href="#">Fort Jute Rugs</a></li>
-                    <li><a href="#">Chunky Fort Rugs</a></li>
-                  </ul>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Felt Rugs</h4>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Runner Rugs</h4>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Recycled Rugs</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- KIDS -->
-        <div class="nav-item">
-          <a href="#" class="nav-link">KIDS</a>
-          <div class="mega-menu">
-            <div class="container mega-menu-container">
-              <div class="mega-menu-sidebar">
-                <a href="#" class="sidebar-btn">Trending Now</a>
-                <a href="#" class="sidebar-btn">New Launches</a>
-                <a href="#" class="sidebar-btn">Sales & Offers</a>
-              </div>
-              <div class="mega-menu-grid">
-                <div class="mega-menu-col">
-                  <h4>All Kids Products</h4>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Baby Dohar</h4>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Baby Blanket</h4>
-                </div>
-                <div class="mega-menu-col">
-                  <h4>Kids Curtain</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <a href="#" class="nav-link">GIFTING</a>
-        <a href="#" class="nav-link">OFFERS</a>
-        <a href="#" class="nav-link">3D STORE</a>
-        <a href="#" class="nav-link">BLOGS</a>
-        <a href="#" class="nav-link">MORE</a>
-      </nav>
-      <div class="nav-icons">
-        <button class="icon-btn" aria-label="Search"><i class="fas fa-search"></i></button>
-        <button class="icon-btn hide-on-mobile" aria-label="Wishlist"><i class="far fa-heart"></i></button>
-        <button class="icon-btn hide-on-mobile" aria-label="Account"><i class="far fa-user"></i></button>
-        <button class="icon-btn cart-btn" aria-label="Cart">
-          <i class="fas fa-shopping-bag"></i>
-          <span class="cart-badge">0</span>
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+      <div class="container nav-container">
+        <button
+          class="mobile-menu-btn"
+          id="mobileMenuBtn"
+          aria-label="Open menu"
+        >
+          <i class="fas fa-bars"></i>
         </button>
-      </div>
-    </div>
-    
-    <!-- Mobile Sidebar overlay -->
-    <div class="mobile-sidebar" id="mobileSidebar">
-      <div class="sidebar-wrapper" id="sidebarWrapper">
-        <!-- Level 1: Main Categories -->
-        <div class="sidebar-panel active" id="mainPanel">
-          <div class="sidebar-header">
-            <a href="#" class="logo"><span style="color: var(--primary-color);">Home</span>Monde</a>
-            <button class="close-sidebar" id="closeSidebar"><i class="fas fa-times"></i></button>
-          </div>
-          <div class="sidebar-content">
-            <div class="mobile-nav-list">
-              <div class="mobile-nav-item trigger-panel" data-target="livingPanel">
-                <span>Living</span>
-                <i class="fas fa-arrow-right"></i>
+        <a href="#" class="logo"
+          ><span style="color: var(--primary-color)">Home</span>Monde</a
+        >
+        <nav class="nav-links" id="navLinks">
+          <!-- LIVING -->
+          <div class="nav-item">
+            <a href="#" class="nav-link">LIVING</a>
+            <div class="mega-menu">
+              <div class="container mega-menu-container">
+                <div class="mega-menu-sidebar">
+                  <a href="#" class="sidebar-btn">Trending Now</a>
+                  <a href="#" class="sidebar-btn">New Launches</a>
+                  <a href="#" class="sidebar-btn">Sales & Offers</a>
+                </div>
+                <div class="mega-menu-grid">
+                  <div class="mega-menu-col">
+                    <h4>Curtains</h4>
+                    <ul>
+                      <li><a href="#">All Curtains</a></li>
+                      <li><a href="#">Sheer Curtains</a></li>
+                      <li><a href="#">Solid Sheer Curtains</a></li>
+                      <li><a href="#">Printed Sheer Curtains</a></li>
+                      <li><a href="#">Blackout Curtains</a></li>
+                      <li><a href="#">Solid Blackout Curtains</a></li>
+                      <li><a href="#">Printed Blackout Curtains</a></li>
+                      <li><a href="#">Printed Semi Blackout</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Cushion Cover</h4>
+                    <ul>
+                      <li><a href="#">All Cushion Cover</a></li>
+                      <li><a href="#">Printed Cushion Cover</a></li>
+                      <li><a href="#">Velvet Cushion Cover</a></li>
+                      <li><a href="#">Hand Block Printed Cushion Cover</a></li>
+                      <li><a href="#">Foil Print Cushion Cover</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Bolster Covers</h4>
+                    <ul>
+                      <li><a href="#">All Bolster Covers</a></li>
+                      <li><a href="#">Satin Stripes Bolster Covers</a></li>
+                      <li><a href="#">Printed Bolster Covers</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Throw</h4>
+                    <ul>
+                      <li><a href="#">All Throw</a></li>
+                      <li><a href="#">Woven Throw</a></li>
+                      <li><a href="#">Kantha Throw</a></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div class="mobile-nav-item trigger-panel" data-target="beddingPanel">
-                <span>Bedding</span>
-                <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- BEDDING -->
+          <div class="nav-item">
+            <a href="#" class="nav-link">BEDDING</a>
+            <div class="mega-menu">
+              <div class="container mega-menu-container">
+                <div class="mega-menu-sidebar">
+                  <a href="#" class="sidebar-btn">Trending Now</a>
+                  <a href="#" class="sidebar-btn">New Launches</a>
+                  <a href="#" class="sidebar-btn">Sales & Offers</a>
+                </div>
+                <div class="mega-menu-grid">
+                  <div class="mega-menu-col">
+                    <h4>Bedsheets</h4>
+                    <ul>
+                      <li><a href="#">All Bedsheets</a></li>
+                      <li><a href="#">Printed Bedsheets</a></li>
+                      <li><a href="#">Floral Bedsheets</a></li>
+                      <li><a href="#">Solid Bedsheets</a></li>
+                      <li><a href="#">Satin Stripes Bedsheets</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Fitted Bedsheet</h4>
+                    <ul>
+                      <li><a href="#">All Fitted Sheet</a></li>
+                      <li><a href="#">Solid fitted sheet</a></li>
+                      <li><a href="#">Satin Stripe Fitted sheet</a></li>
+                      <li><a href="#">Printed Fitted Sheet</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Mattress Protector</h4>
+                    <ul>
+                      <li><a href="#">All Mattress Protectors</a></li>
+                      <li><a href="#">Terry Mattress Protector</a></li>
+                      <li><a href="#">Quilted Mattress Protector</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Dohars</h4>
+                    <ul>
+                      <li><a href="#">All Dohars</a></li>
+                      <li><a href="#">Printed Dohars</a></li>
+                      <li><a href="#">Satin Stripes Dohars</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Blanket</h4>
+                    <ul>
+                      <li><a href="#">All Blankets</a></li>
+                      <li><a href="#">Plush Blanket</a></li>
+                      <li><a href="#">Sherpa Blanket</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Duvet Cover</h4>
+                    <ul>
+                      <li><a href="#">All Duvet Cover</a></li>
+                      <li><a href="#">Satin Strip Duvet Cover</a></li>
+                      <li><a href="#">Solid Duvet Cover</a></li>
+                      <li><a href="#">Printed Duvet Cover</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Pillow Covers</h4>
+                    <ul>
+                      <li><a href="#">Cotton</a></li>
+                      <li><a href="#">Block Print</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Mattress Cover</h4>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Comforter</h4>
+                  </div>
+                </div>
               </div>
-              <div class="mobile-nav-item trigger-panel" data-target="flooringPanel">
-                <span>Flooring</span>
-                <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- FLOORING -->
+          <div class="nav-item">
+            <a href="#" class="nav-link">FLOORING</a>
+            <div class="mega-menu">
+              <div class="container mega-menu-container">
+                <div class="mega-menu-sidebar">
+                  <a href="#" class="sidebar-btn">Trending Now</a>
+                  <a href="#" class="sidebar-btn">New Launches</a>
+                  <a href="#" class="sidebar-btn">Sales & Offers</a>
+                </div>
+                <div class="mega-menu-grid">
+                  <div class="mega-menu-col">
+                    <h4>All Rugs</h4>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Cotton Rug</h4>
+                    <ul>
+                      <li><a href="#">Diamond Rugs</a></li>
+                      <li><a href="#">Herringbone Rugs</a></li>
+                      <li><a href="#">Plaid Rug</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Jute Rugs</h4>
+                    <ul>
+                      <li><a href="#">All Jute Rugs</a></li>
+                      <li><a href="#">Fort Jute Rugs</a></li>
+                      <li><a href="#">Chunky Fort Rugs</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Felt Rugs</h4>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Runner Rugs</h4>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Recycled Rugs</h4>
+                  </div>
+                </div>
               </div>
-              <div class="mobile-nav-item trigger-panel" data-target="kidsPanel">
-                <span>Kids</span>
-                <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- KIDS -->
+          <div class="nav-item">
+            <a href="#" class="nav-link">KIDS</a>
+            <div class="mega-menu">
+              <div class="container mega-menu-container">
+                <div class="mega-menu-sidebar">
+                  <a href="#" class="sidebar-btn">Trending Now</a>
+                  <a href="#" class="sidebar-btn">New Launches</a>
+                  <a href="#" class="sidebar-btn">Sales & Offers</a>
+                </div>
+                <div class="mega-menu-grid">
+                  <div class="mega-menu-col">
+                    <h4>All Kids Products</h4>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Baby Dohar</h4>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Baby Blanket</h4>
+                  </div>
+                  <div class="mega-menu-col">
+                    <h4>Kids Curtain</h4>
+                  </div>
+                </div>
               </div>
-              <a href="#" class="mobile-nav-single">GIFTING</a>
-              <a href="#" class="mobile-nav-single">OFFERS</a>
-              <a href="#" class="mobile-nav-single">3D STORE</a>
-              <a href="#" class="mobile-nav-single">BLOGS</a>
-              <a href="#" class="mobile-nav-single">MORE</a>
             </div>
           </div>
-        </div>
 
-        <!-- Level 2: Living -->
-        <div class="sidebar-panel" id="livingPanel">
-          <div class="sidebar-header back-header" data-back="mainPanel">
-            <i class="fas fa-arrow-left"></i>
-            <span>Living</span>
-          </div>
-          <div class="sidebar-content">
-            <div class="mobile-nav-list">
-              <div class="mobile-nav-item trigger-panel" data-target="curtainsPanel">
-                <span>Curtains</span>
-                <i class="fas fa-arrow-right"></i>
+          <a href="#" class="nav-link">GIFTING</a>
+          <a href="#" class="nav-link">OFFERS</a>
+          <a href="#" class="nav-link">3D STORE</a>
+          <a href="#" class="nav-link">BLOGS</a>
+          <a href="#" class="nav-link">MORE</a>
+        </nav>
+        <div class="nav-icons">
+          <button class="icon-btn" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+          <button class="icon-btn hide-on-mobile" aria-label="Wishlist">
+            <i class="far fa-heart"></i>
+          </button>
+          <button class="icon-btn hide-on-mobile" aria-label="Account">
+            <i class="far fa-user"></i>
+          </button>
+          <button class="icon-btn cart-btn" aria-label="Cart">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="cart-badge">0</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Sidebar overlay -->
+      <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-wrapper" id="sidebarWrapper">
+          <!-- Level 1: Main Categories -->
+          <div class="sidebar-panel active" id="mainPanel">
+            <div class="sidebar-header">
+              <a href="#" class="logo"
+                ><span style="color: var(--primary-color)">Home</span>Monde</a
+              >
+              <button class="close-sidebar" id="closeSidebar">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <div class="sidebar-content">
+              <div class="mobile-nav-list">
+                <div
+                  class="mobile-nav-item trigger-panel"
+                  data-target="livingPanel"
+                >
+                  <span>Living</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+                <div
+                  class="mobile-nav-item trigger-panel"
+                  data-target="beddingPanel"
+                >
+                  <span>Bedding</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+                <div
+                  class="mobile-nav-item trigger-panel"
+                  data-target="flooringPanel"
+                >
+                  <span>Flooring</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+                <div
+                  class="mobile-nav-item trigger-panel"
+                  data-target="kidsPanel"
+                >
+                  <span>Kids</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+                <a href="#" class="mobile-nav-single">GIFTING</a>
+                <a href="#" class="mobile-nav-single">OFFERS</a>
+                <a href="#" class="mobile-nav-single">3D STORE</a>
+                <a href="#" class="mobile-nav-single">BLOGS</a>
+                <a href="#" class="mobile-nav-single">MORE</a>
               </div>
-              <div class="mobile-nav-item trigger-panel" data-target="cushionPanel">
-                <span>Cushion Cover</span>
-                <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+
+          <!-- Level 2: Living -->
+          <div class="sidebar-panel" id="livingPanel">
+            <div class="sidebar-header back-header" data-back="mainPanel">
+              <i class="fas fa-arrow-left"></i>
+              <span>Living</span>
+            </div>
+            <div class="sidebar-content">
+              <div class="mobile-nav-list">
+                <div
+                  class="mobile-nav-item trigger-panel"
+                  data-target="curtainsPanel"
+                >
+                  <span>Curtains</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+                <div
+                  class="mobile-nav-item trigger-panel"
+                  data-target="cushionPanel"
+                >
+                  <span>Cushion Cover</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+                <a href="#" class="mobile-nav-single">Bolster Covers</a>
+                <a href="#" class="mobile-nav-single">Throw</a>
               </div>
-              <a href="#" class="mobile-nav-single">Bolster Covers</a>
-              <a href="#" class="mobile-nav-single">Throw</a>
-            </div>
-            <div class="sidebar-featured-btns">
-              <a href="#" class="btn-featured" style="background-color: var(--primary-color);">Trending Now</a>
-              <a href="#" class="btn-featured" style="background-color: var(--primary-color);">New Launches</a>
-              <a href="#" class="btn-featured" style="background-color: var(--primary-color);">Sales & Offers</a>
+              <div class="sidebar-featured-btns">
+                <a
+                  href="#"
+                  class="btn-featured"
+                  style="background-color: var(--primary-color)"
+                  >Trending Now</a
+                >
+                <a
+                  href="#"
+                  class="btn-featured"
+                  style="background-color: var(--primary-color)"
+                  >New Launches</a
+                >
+                <a
+                  href="#"
+                  class="btn-featured"
+                  style="background-color: var(--primary-color)"
+                  >Sales & Offers</a
+                >
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Level 3: Curtains -->
-        <div class="sidebar-panel" id="curtainsPanel">
-          <div class="sidebar-header back-header" data-back="livingPanel">
-            <i class="fas fa-arrow-left"></i>
-            <span>Curtains</span>
-          </div>
-          <div class="sidebar-content">
-            <div class="mobile-nav-list">
-              <a href="#" class="mobile-nav-single">All Curtains</a>
-              <a href="#" class="mobile-nav-single">Sheer Curtains</a>
-              <a href="#" class="mobile-nav-single">Solid Sheer Curtains</a>
-              <a href="#" class="mobile-nav-single">Printed Sheer Curtains</a>
-              <a href="#" class="mobile-nav-single">Blackout Curtains</a>
-              <a href="#" class="mobile-nav-single">Solid Blackout Curtains</a>
-              <a href="#" class="mobile-nav-single">Printed Blackout Curtains</a>
-              <a href="#" class="mobile-nav-single">Printed Semi Blackout Curtains</a>
+          <!-- Level 3: Curtains -->
+          <div class="sidebar-panel" id="curtainsPanel">
+            <div class="sidebar-header back-header" data-back="livingPanel">
+              <i class="fas fa-arrow-left"></i>
+              <span>Curtains</span>
+            </div>
+            <div class="sidebar-content">
+              <div class="mobile-nav-list">
+                <a href="#" class="mobile-nav-single">All Curtains</a>
+                <a href="#" class="mobile-nav-single">Sheer Curtains</a>
+                <a href="#" class="mobile-nav-single">Solid Sheer Curtains</a>
+                <a href="#" class="mobile-nav-single">Printed Sheer Curtains</a>
+                <a href="#" class="mobile-nav-single">Blackout Curtains</a>
+                <a href="#" class="mobile-nav-single"
+                  >Solid Blackout Curtains</a
+                >
+                <a href="#" class="mobile-nav-single"
+                  >Printed Blackout Curtains</a
+                >
+                <a href="#" class="mobile-nav-single"
+                  >Printed Semi Blackout Curtains</a
+                >
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Level 3: Cushion Cover -->
-        <div class="sidebar-panel" id="cushionPanel">
-          <div class="sidebar-header back-header" data-back="livingPanel">
-            <i class="fas fa-arrow-left"></i>
-            <span>Cushion Cover</span>
-          </div>
-          <div class="sidebar-content">
-            <div class="mobile-nav-list">
-              <a href="#" class="mobile-nav-single">All Cushion Cover</a>
-              <a href="#" class="mobile-nav-single">Printed Cushion Cover</a>
-              <a href="#" class="mobile-nav-single">Velvet Cushion Cover</a>
-              <a href="#" class="mobile-nav-single">Hand Block Printed</a>
-              <a href="#" class="mobile-nav-single">Foil Print</a>
+          <!-- Level 3: Cushion Cover -->
+          <div class="sidebar-panel" id="cushionPanel">
+            <div class="sidebar-header back-header" data-back="livingPanel">
+              <i class="fas fa-arrow-left"></i>
+              <span>Cushion Cover</span>
+            </div>
+            <div class="sidebar-content">
+              <div class="mobile-nav-list">
+                <a href="#" class="mobile-nav-single">All Cushion Cover</a>
+                <a href="#" class="mobile-nav-single">Printed Cushion Cover</a>
+                <a href="#" class="mobile-nav-single">Velvet Cushion Cover</a>
+                <a href="#" class="mobile-nav-single">Hand Block Printed</a>
+                <a href="#" class="mobile-nav-single">Foil Print</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Level 2: Bedding -->
-        <div class="sidebar-panel" id="beddingPanel">
-          <div class="sidebar-header back-header" data-back="mainPanel">
-            <i class="fas fa-arrow-left"></i>
-            <span>Bedding</span>
-          </div>
-          <div class="sidebar-content">
-            <div class="mobile-nav-list">
-              <a href="#" class="mobile-nav-single">Bedsheets</a>
-              <a href="#" class="mobile-nav-single">Fitted Bedsheet</a>
-              <a href="#" class="mobile-nav-single">Mattress Protector</a>
-              <a href="#" class="mobile-nav-single">Dohars</a>
-              <a href="#" class="mobile-nav-single">Blanket</a>
-              <a href="#" class="mobile-nav-single">Duvet Cover</a>
+          <!-- Level 2: Bedding -->
+          <div class="sidebar-panel" id="beddingPanel">
+            <div class="sidebar-header back-header" data-back="mainPanel">
+              <i class="fas fa-arrow-left"></i>
+              <span>Bedding</span>
             </div>
-            <div class="sidebar-featured-btns">
-              <a href="#" class="btn-featured" style="background-color: #8fb8b2;">Trending Now</a>
-              <a href="#" class="btn-featured" style="background-color: #8fb8b2;">New Launches</a>
-              <a href="#" class="btn-featured" style="background-color: #8fb8b2;">Sales & Offers</a>
+            <div class="sidebar-content">
+              <div class="mobile-nav-list">
+                <a href="#" class="mobile-nav-single">Bedsheets</a>
+                <a href="#" class="mobile-nav-single">Fitted Bedsheet</a>
+                <a href="#" class="mobile-nav-single">Mattress Protector</a>
+                <a href="#" class="mobile-nav-single">Dohars</a>
+                <a href="#" class="mobile-nav-single">Blanket</a>
+                <a href="#" class="mobile-nav-single">Duvet Cover</a>
+              </div>
+              <div class="sidebar-featured-btns">
+                <a
+                  href="#"
+                  class="btn-featured"
+                  style="background-color: #8fb8b2"
+                  >Trending Now</a
+                >
+                <a
+                  href="#"
+                  class="btn-featured"
+                  style="background-color: #8fb8b2"
+                  >New Launches</a
+                >
+                <a
+                  href="#"
+                  class="btn-featured"
+                  style="background-color: #8fb8b2"
+                  >Sales & Offers</a
+                >
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Level 2: Flooring -->
-        <div class="sidebar-panel" id="flooringPanel">
-          <div class="sidebar-header back-header" data-back="mainPanel">
-            <i class="fas fa-arrow-left"></i>
-            <span>Flooring</span>
-          </div>
-          <div class="sidebar-content">
-            <div class="mobile-nav-list">
-              <a href="#" class="mobile-nav-single">Cotton Rug</a>
-              <a href="#" class="mobile-nav-single">Jute Rugs</a>
-              <a href="#" class="mobile-nav-single">Runner Rugs</a>
+          <!-- Level 2: Flooring -->
+          <div class="sidebar-panel" id="flooringPanel">
+            <div class="sidebar-header back-header" data-back="mainPanel">
+              <i class="fas fa-arrow-left"></i>
+              <span>Flooring</span>
             </div>
-            <div class="sidebar-featured-btns">
-              <a href="#" class="btn-featured" style="background-color: #8fb8b2;">Trending Now</a>
-              <a href="#" class="btn-featured" style="background-color: #8fb8b2;">New Launches</a>
-              <a href="#" class="btn-featured" style="background-color: #8fb8b2;">Sales & Offers</a>
+            <div class="sidebar-content">
+              <div class="mobile-nav-list">
+                <a href="#" class="mobile-nav-single">Cotton Rug</a>
+                <a href="#" class="mobile-nav-single">Jute Rugs</a>
+                <a href="#" class="mobile-nav-single">Runner Rugs</a>
+              </div>
+              <div class="sidebar-featured-btns">
+                <a
+                  href="#"
+                  class="btn-featured"
+                  style="background-color: #8fb8b2"
+                  >Trending Now</a
+                >
+                <a
+                  href="#"
+                  class="btn-featured"
+                  style="background-color: #8fb8b2"
+                  >New Launches</a
+                >
+                <a
+                  href="#"
+                  class="btn-featured"
+                  style="background-color: #8fb8b2"
+                  >Sales & Offers</a
+                >
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Level 2: Kids -->
-        <div class="sidebar-panel" id="kidsPanel">
-          <div class="sidebar-header back-header" data-back="mainPanel">
-            <i class="fas fa-arrow-left"></i>
-            <span>Kids</span>
-          </div>
-          <div class="sidebar-content">
-            <div class="mobile-nav-list">
-              <a href="#" class="mobile-nav-single">All Kids Products</a>
-              <a href="#" class="mobile-nav-single">Baby Dohar</a>
-              <a href="#" class="mobile-nav-single">Baby Blanket</a>
+          <!-- Level 2: Kids -->
+          <div class="sidebar-panel" id="kidsPanel">
+            <div class="sidebar-header back-header" data-back="mainPanel">
+              <i class="fas fa-arrow-left"></i>
+              <span>Kids</span>
             </div>
-            <div class="sidebar-featured-btns">
-              <a href="#" class="btn-featured" style="background-color: #8fb8b2;">Trending Now</a>
-              <a href="#" class="btn-featured" style="background-color: #8fb8b2;">New Launches</a>
-              <a href="#" class="btn-featured" style="background-color: #8fb8b2;">Sales & Offers</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <div class="sidebar-overlay" id="sidebarOverlay"></div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <img src="images/hero-banner.jpg" alt="HomeMonde Hero - Elegant Living Room" />
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="container hero-container">
-      <div class="hero-content">
-        <span class="hero-tagline">NEW COLLECTION 2025</span>
-        <h1 class="hero-heading">Elegance That<br/>Lives Beyond<br/>Trends</h1>
-        <p class="hero-subtext">Premium home textiles crafted with care. Transform<br/>your space with our curated collection of curtains,<br/>bedsheets, and décor.</p>
-        <div class="hero-cta">
-          <a href="#" class="btn btn-primary">Shop Now <i class="fas fa-arrow-right" style="margin-left: 4px;"></i></a>
-          <a href="#" class="btn btn-outline">Explore Collections</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Shop by Category -->
-  <section class="categories-section" id="categories">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Curated For You</span>
-        <h2 class="section-title">Shop by Category</h2>
-      </div>
-      <div class="categories-grid">
-        <div class="category-card">
-          <div class="category-img">
-            <img src="images/ct-1.jpg" alt="Curtains" />
-          </div>
-          <div class="category-overlay">
-            <h3>Curtains</h3>
-            <span class="category-link">Explore Collection <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </div>
-        <div class="category-card">
-          <div class="category-img">
-            <img src="images/ct-2.jpg" alt="Bedsheets" />
-          </div>
-          <div class="category-overlay">
-            <h3>Bedsheets</h3>
-            <span class="category-link">Explore Collection <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </div>
-        <div class="category-card">
-          <div class="category-img">
-            <img src="images/ct-3.jpg" alt="Blankets" />
-          </div>
-          <div class="category-overlay">
-            <h3>Blankets</h3>
-            <span class="category-link">Explore Collection <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </div>
-        <div class="category-card">
-          <div class="category-img">
-            <img src="images/ct-4.jpg" alt="Cushion Covers" />
-          </div>
-          <div class="category-overlay">
-            <h3>Cushion Covers</h3>
-            <span class="category-link">Explore Collection <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </div>
-        <div class="category-card">
-          <div class="category-img">
-            <img src="images/ct-5.jpg" alt="Fitted Sheets" />
-          </div>
-          <div class="category-overlay">
-            <h3>Fitted Sheets</h3>
-            <span class="category-link">Explore Collection <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </div>
-        <div class="category-card">
-          <div class="category-img">
-            <img src="images/ct-6.jpg" alt="Dohars" />
-          </div>
-          <div class="category-overlay">
-            <h3>Dohars</h3>
-            <span class="category-link">Explore Collection <i class="fas fa-arrow-right"></i></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Products -->
-  <section class="products-section" id="products">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Handpicked</span>
-        <h2 class="section-title">Featured Products</h2>
-      </div>
-      <div class="products-grid">
-        <!-- Product 1 -->
-        <div class="product-card">
-          <div class="product-img-wrap">
-            <img src="images/ft-1.jpg" alt="Linen Sheer Curtains" />
-            <span class="product-badge badge-bestseller">Best Seller</span>
-            <button class="wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Linen Sheer Curtains</h3>
-            <div class="product-price">
-              <span class="price-current">₹1,299</span>
-              <span class="price-original">₹1,799</span>
-            </div>
-          </div>
-        </div>
-        <!-- Product 2 -->
-        <div class="product-card">
-          <div class="product-img-wrap">
-            <img src="images/ft-2.jpg" alt="Premium Cotton Bedsheet Set" />
-            <span class="product-badge badge-new">New</span>
-            <button class="wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Premium Cotton Bedsheet Set</h3>
-            <div class="product-price">
-              <span class="price-current">₹999</span>
-              <span class="price-original">₹1,499</span>
-            </div>
-          </div>
-        </div>
-        <!-- Product 3 -->
-        <div class="product-card">
-          <div class="product-img-wrap">
-            <img src="images/ft-3.jpg" alt="Fitted Elastic Bedsheet" />
-            <button class="wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Fitted Elastic Bedsheet</h3>
-            <div class="product-price">
-              <span class="price-current">₹849</span>
-              <span class="price-original">₹1,199</span>
-            </div>
-          </div>
-        </div>
-        <!-- Product 4 -->
-        <div class="product-card">
-          <div class="product-img-wrap">
-            <img src="images/ft-4.jpg" alt="Floral Print Dohar" />
-            <span class="product-badge badge-trending">Trending</span>
-            <button class="wishlist-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
-          </div>
-          <div class="product-info">
-            <h3 class="product-name">Floral Print Dohar</h3>
-            <div class="product-price">
-              <span class="price-current">₹1,199</span>
-              <span class="price-original">₹1,599</span>
+            <div class="sidebar-content">
+              <div class="mobile-nav-list">
+                <a href="#" class="mobile-nav-single">All Kids Products</a>
+                <a href="#" class="mobile-nav-single">Baby Dohar</a>
+                <a href="#" class="mobile-nav-single">Baby Blanket</a>
+              </div>
+              <div class="sidebar-featured-btns">
+                <a
+                  href="#"
+                  class="btn-featured"
+                  style="background-color: #8fb8b2"
+                  >Trending Now</a
+                >
+                <a
+                  href="#"
+                  class="btn-featured"
+                  style="background-color: #8fb8b2"
+                  >New Launches</a
+                >
+                <a
+                  href="#"
+                  class="btn-featured"
+                  style="background-color: #8fb8b2"
+                  >Sales & Offers</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+      <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    </header>
 
-  <!-- Our Story Section -->
-  <section class="story-section" id="story">
-    <div class="container">
-      <div class="story-grid">
-        <div class="story-image">
-          <img src="images/our-story.jpg" alt="Our Story" />
+    <!-- ==================== HERO SLIDER ==================== -->
+    <section class="hero-slider" id="heroSlider">
+      <div class="slides-wrapper">
+        <div class="slide active">
+          <img
+            src="https://www.homemonde.in/cdn/shop/files/Hanging_Pattern_4dbe0e3a-168f-47b8-9f89-71e3e5e87acd.jpg?v=1752498061&width=2000"
+            alt="Curtains Collection"
+          />
         </div>
-        <div class="story-content">
-          <span class="section-label">Our Story</span>
-          <h2 class="section-title">Crafted With Care, Designed For You</h2>
-          <p>At HomeMonde, we believe your home deserves the finest textiles. Every product is thoughtfully designed to blend comfort with elegance, turning everyday living into a luxurious experience.</p>
-          <p>From handpicked fabrics to artisan-inspired patterns, our collections bring warmth and character to every corner of your home. Experience the difference that quality makes.</p>
-          <a href="#" class="btn btn-primary" style="background-color: var(--primary-color);">Learn More About Us</a>
+        <div class="slide">
+          <img
+            src="https://www.homemonde.in/cdn/shop/files/Printed_Fitted_Sheet_jpg.jpg?v=1770713270&width=2000"
+            alt="Fitted Bedsheets"
+          />
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Testimonials -->
-  <section class="testimonials-section" id="testimonials">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">What Our Customers Say</span>
-        <h2 class="section-title">Loved by Thousands</h2>
+    <!-- ==================== SHOP BY CATEGORY ==================== -->
+    <section class="section-padding" id="categories">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title-alt">SHOP BY CATEGORY</h2>
+        </div>
+        <div class="categories-grid">
+          <a href="#" class="category-card"
+            ><div class="category-img-wrap">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/1_20715113-d8c9-45a6-8256-3551ca115256.jpg?v=1770632888&width=720"
+                alt="Curtains"
+              />
+            </div>
+            <h3 class="category-title">All Curtains</h3></a
+          >
+          <a href="#" class="category-card"
+            ><div class="category-img-wrap">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/1_44e84fa4-154a-4236-ae64-36b77fc139a4.jpg?v=1761996962&width=720"
+                alt="Cushion Cover"
+              />
+            </div>
+            <h3 class="category-title">Cushion Cover</h3></a
+          >
+          <a href="#" class="category-card"
+            ><div class="category-img-wrap">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/1_4b408ef9-237f-436f-90fe-49b3227237f5.jpg?v=1765867895&width=720"
+                alt="Bedsheets"
+              />
+            </div>
+            <h3 class="category-title">Bedsheets</h3></a
+          >
+          <a href="#" class="category-card"
+            ><div class="category-img-wrap">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/1_5ab6cb8a-f68c-4f4a-9d46-bc07aae7e6f0.jpg?v=1770631922&width=720"
+                alt="Best Sellers"
+              />
+            </div>
+            <h3 class="category-title">Best Sellers</h3></a
+          >
+          <a href="#" class="category-card"
+            ><div class="category-img-wrap">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/1_fdb02577-d243-4413-b0f7-891230a7060d.jpg?v=1770633014&width=720"
+                alt="Blankets"
+              />
+            </div>
+            <h3 class="category-title">Blankets</h3></a
+          >
+          <a href="#" class="category-card"
+            ><div class="category-img-wrap">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/PrintedSheer_1_2b2edbbf-c59b-49e9-9ca5-74313e2769ee.jpg?v=1755518470&width=720"
+                alt="Fitted Bedsheet"
+              />
+            </div>
+            <h3 class="category-title">Fitted Bedsheet</h3></a
+          >
+          <a href="#" class="category-card"
+            ><div class="category-img-wrap">
+              <img
+                src="https://www.homemonde.in/cdn/shop/collections/IMG_9070_copy.jpg?v=1752125512&width=1000"
+                alt="Dohars"
+              />
+            </div>
+            <h3 class="category-title">Dohars</h3></a
+          >
+          <a href="#" class="category-card"
+            ><div class="category-img-wrap">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/1_32612bb9-946b-4803-ba42-1571bbf39249.jpg?v=1755065606&width=720"
+                alt="Runner Rugs"
+              />
+            </div>
+            <h3 class="category-title">Runner Rugs</h3></a
+          >
+          <a href="#" class="category-card"
+            ><div class="category-img-wrap">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/11_a1feb739-2d37-4c85-9632-e41de304015e.jpg?v=1761996756&width=720"
+                alt="Table Cloth"
+              />
+            </div>
+            <h3 class="category-title">Table Cloth</h3></a
+          >
+          <a href="#" class="category-card"
+            ><div class="category-img-wrap">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/1_f0209a9e-907d-4367-bd7b-30018ef4faf8.jpg?v=1765867801&width=720"
+                alt="Cotton Rugs"
+              />
+            </div>
+            <h3 class="category-title">Cotton Rugs</h3></a
+          >
+        </div>
       </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
+    </section>
+
+    <!-- Split Banner: Curtains -->
+    <section class="split-banner">
+      <div class="banner-img-wrap">
+        <img
+          src="https://www.homemonde.in/cdn/shop/files/Untitled-2_1ae69f1b-6489-4481-8705-58bd1b50b79a.jpg?v=1756278260&width=1200"
+          alt="Curtains"
+        />
+      </div>
+      <div class="banner-content">
+        <span class="section-label">THE COLLECTION</span>
+        <h2 class="banner-title">CURTAINS<br />COLLECTION</h2>
+        <p
+          style="
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 20px;
+            max-width: 400px;
+            line-height: 1.6;
+          "
+        >
+          Our premium curtains are crafted from high-quality, breathable fabrics
+          like pure cotton and luxurious sateen to ensure maximum comfort.
+          Discover printed, solid, and woven styles that match your unique
+          aesthetic.
+        </p>
+
+        <a href="#" class="banner-link">EXPLORE MORE →</a>
+      </div>
+    </section>
+
+    <!-- NOW TRENDING -->
+    <section
+      class="table-runners-section section-padding"
+      id="products"
+      style="background-color: #f9f9f9"
+    >
+      <div class="container">
+        <div class="section-header text-center">
+          <h2
+            class="section-title-alt"
+            style="margin-bottom: 40px; font-size: 24px; font-weight: 500"
+          >
+            NOW TRENDING
+          </h2>
+        </div>
+        <div class="tr-grid">
+          <div class="tr-card">
+            <div class="tr-img-wrap">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/1_7a7d4e4d-d41b-4b70-bac5-316da2f5d984.jpg?v=1768986441&width=720"
+                alt="Product"
+              />
+            </div>
+            <div class="tr-actions">
+              <button class="btn-add">Choose options</button>
+              <button class="btn-heart" aria-label="Add to wishlist">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="tr-title">
+              Imprimer Dino Adventure - Printed Baby Blanket
+            </h3>
+            <div class="tr-price">Rs. 1,007.00</div>
           </div>
-          <p class="testimonial-text">"The quality of the curtains exceeded my expectations. They transformed my living room completely. Will definitely be ordering more!"</p>
-          <div class="testimonial-author">
-            <div>
-              <h4>Priya Sharma</h4>
-              <span>Mumbai, India</span>
+          <div class="tr-card">
+            <div class="tr-img-wrap">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/1_20715113-d8c9-45a6-8256-3551ca115256.jpg?v=1770632888&width=720"
+                alt="Product"
+              />
+            </div>
+            <div class="tr-actions">
+              <button class="btn-add">Choose options</button>
+              <button class="btn-heart" aria-label="Add to wishlist">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="tr-title">
+              Imprimer Dreamy Bear - Printed Baby Blanket
+            </h3>
+            <div class="tr-price">Rs. 822.00</div>
+          </div>
+          <div class="tr-card">
+            <div class="tr-img-wrap">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/1_32612bb9-946b-4803-ba42-1571bbf39249.jpg?v=1755065606&width=720"
+                alt="Product"
+              />
+            </div>
+            <div class="tr-actions">
+              <button class="btn-sold">Sold out</button>
+              <button class="btn-heart" aria-label="Add to wishlist">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="tr-title">
+              Fort - Terry Solid Mattress Protector (Brown)
+            </h3>
+            <div class="tr-price">Rs. 475.00</div>
+          </div>
+          <div class="tr-card">
+            <div class="tr-img-wrap">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/1_44e84fa4-154a-4236-ae64-36b77fc139a4.jpg?v=1761996962&width=720"
+                alt="Product"
+              />
+            </div>
+            <div class="tr-actions">
+              <button class="btn-add">Choose options</button>
+              <button class="btn-heart" aria-label="Add to wishlist">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="tr-title">Premium Cotton Bedsheet</h3>
+            <div class="tr-price">Rs. 1,499.00</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Split Banner: Bedsheets -->
+    <section class="split-banner reverse">
+      <div class="banner-img-wrap">
+        <img
+          src="https://www.homemonde.in/cdn/shop/collections/MattressCover_98b3c823-2c2c-4feb-a5fa-39a26239cf90.jpg?v=1747822405&width=1000"
+          alt="Bedsheets"
+        />
+      </div>
+      <div class="banner-content">
+        <span class="section-label">LUXURY SLEEP</span>
+        <h2 class="banner-title">BEDSHEETS<br />COLLECTION</h2>
+        <p
+          style="
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 20px;
+            max-width: 400px;
+            line-height: 1.6;
+          "
+        >
+          Our premium bedsheets are crafted from high-quality, breathable
+          fabrics like pure cotton and luxurious sateen to ensure maximum
+          comfort. Discover printed, solid, and woven styles that match your
+          unique aesthetic.
+        </p>
+        <a href="#" class="banner-link">SHOP NOW →</a>
+      </div>
+    </section>
+
+    <!-- SHOP FEATURED CATEGORIES -->
+    <section
+      class="featured-categories section-padding"
+      style="background-color: #fff"
+    >
+      <div class="container text-center">
+        <h2
+          class="section-title-alt"
+          style="
+            margin-bottom: 40px;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+          "
+        >
+          SHOP FEATURED CATEGORIES
+        </h2>
+        <div class="fc-grid">
+          <a href="#" class="fc-card">
+            <img
+              class="fc-img"
+              src="https://www.homemonde.in/cdn/shop/files/1_4b408ef9-237f-436f-90fe-49b3227237f5.jpg?width=400"
+              alt="Comforters"
+            />
+            <span>Comforters</span>
+          </a>
+          <a href="#" class="fc-card">
+            <img
+              class="fc-img"
+              src="https://www.homemonde.in/cdn/shop/files/1_f0209a9e-907d-4367-bd7b-30018ef4faf8.jpg?width=400"
+              alt="Jute Rugs"
+            />
+            <span>Jute Rugs</span>
+          </a>
+          <a href="#" class="fc-card">
+            <img
+              class="fc-img"
+              src="https://www.homemonde.in/cdn/shop/files/IMG_9725copy_ef0afe93-4a9c-4080-906a-09352cca15bc_1024x.jpg"
+              alt="Table Runner"
+            />
+            <span>Table Runner</span>
+          </a>
+          <a href="#" class="fc-card">
+            <img
+              class="fc-img"
+              src="https://www.homemonde.in/cdn/shop/files/1_44e84fa4-154a-4236-ae64-36b77fc139a4.jpg?width=400"
+              alt="Pillow Cover"
+            />
+            <span>Pillow Cover</span>
+          </a>
+          <a href="#" class="fc-card">
+            <img
+              class="fc-img"
+              src="https://www.homemonde.in/cdn/shop/files/1_fdb02577-d243-4413-b0f7-891230a7060d.jpg?width=400"
+              alt="Duvet Cover"
+            />
+            <span>Duvet Cover</span>
+          </a>
+          <a href="#" class="fc-card">
+            <img
+              class="fc-img"
+              src="https://www.homemonde.in/cdn/shop/collections/MattressCover_98b3c823-2c2c-4feb-a5fa-39a26239cf90.jpg?width=400"
+              alt="All Mattress Cover"
+            />
+            <span>All Mattress Cover</span>
+          </a>
+          <a href="#" class="fc-card">
+            <img
+              class="fc-img"
+              src="https://www.homemonde.in/cdn/shop/files/1_32612bb9-946b-4803-ba42-1571bbf39249.jpg?width=400"
+              alt="All Mattress Protector"
+            />
+            <span>All Mattress Protector</span>
+          </a>
+          <a href="#" class="fc-card">
+            <img
+              class="fc-img"
+              src="https://www.homemonde.in/cdn/shop/files/11_a1feb739-2d37-4c85-9632-e41de304015e.jpg?width=400"
+              alt="Recycled Runner"
+            />
+            <span>Recycled Runner</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CURTAINS COLLECTION -->
+    <section
+      class="trending-split-section"
+      style="background-color: #fff; color: #2a2622"
+    >
+      <div
+        class="trending-left"
+        style="
+          /* padding: 40px 10%; */
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        "
+      >
+        <span
+          style="
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          "
+          >CURTAINS COLLECTION</span
+        >
+        <h2
+          style="
+            font-family: &quot;DM Sans&quot;, sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: none;
+            letter-spacing: 0px;
+            margin: 15px 0 10px;
+            line-height: 1.4;
+            color: #2a2622;
+          "
+        >
+          Where Style Meets Functionality
+        </h2>
+        <p
+          style="
+            font-size: 15px;
+            color: #555;
+            margin-bottom: 25px;
+            line-height: 1.6;
+          "
+        >
+          Enhance your living spaces with our premium range of curtains, crafted
+          to offer both elegance and privacy. Discover a variety of styles, from
+          sheer to blackout.
+        </p>
+        <a
+          href="#"
+          style="
+            font-size: 16px;
+            font-weight: 700;
+            color: #2a2622;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+          "
+          >Experience Royal Curtains</a
+        >
+      </div>
+      <div class="trending-right">
+        <div class="product-slider-wrap">
+          <button class="ps-arrow ps-prev" aria-label="Prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="product-slider" id="curtainsSlider">
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img
+                  src="https://www.homemonde.in/cdn/shop/files/Untitled-2_1ae69f1b-6489-4481-8705-58bd1b50b79a.jpg?v=1756278260&width=720"
+                  alt="Product"
+                />
+              </div>
+              <div class="product-meta">
+                <h3 class="product-name" style="color: #2a2622">
+                  Imprimer Handpicked Soleil - Back Tab Curtain
+                </h3>
+                <div class="product-price" style="color: #555">Rs. 718.00</div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img
+                  src="https://www.homemonde.in/cdn/shop/files/1_20715113-d8c9-45a6-8256-3551ca115256.jpg?v=1770632888&width=720"
+                  alt="Product"
+                />
+              </div>
+              <div class="product-meta">
+                <h3 class="product-name" style="color: #2a2622">
+                  Imprimer Gold Dandelions - Twist Tab Curtain
+                </h3>
+                <div class="product-price" style="color: #555">Rs. 758.00</div>
+              </div>
+            </div>
+            <div class="product-card">
+              <div class="product-img-wrap">
+                <img
+                  src="https://www.homemonde.in/cdn/shop/files/Hanging_Pattern_4dbe0e3a-168f-47b8-9f89-71e3e5e87acd.jpg?v=1752498061&width=720"
+                  alt="Product"
+                />
+              </div>
+              <div class="product-meta">
+                <h3 class="product-name" style="color: #2a2622">
+                  Imprimer Gold Dandelions - Loop Sheer Curtain
+                </h3>
+                <div class="product-price" style="color: #555">Rs. 728.00</div>
+              </div>
+            </div>
+          </div>
+          <button class="ps-arrow ps-next" aria-label="Next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Royal Rug Banner -->
+    <section class="split-banner">
+      <div
+        class="banner-content"
+        style="
+          background-color: #f7f7f7;
+          padding: 60px 10%;
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        "
+      >
+      <h2 class="banner-title">Royal Rug</h2>
+        <!-- <h2
+          class="banner-title"
+          style="
+            color: #2a2622;
+            font-family: &quot;DM Sans&quot;, sans-serif;
+            font-size: 38px;
+            font-weight: 500;
+            text-transform: capitalize;
+            margin-bottom: 25px;
+          "
+        >
+          Royal Rug
+        </h2> -->
+        <p
+          style="
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+          "
+        >
+          Enhance the grace of your floor by spreading HomeMonde’s felt runners. These non-slip backing runner rugs are made from polyester. You can use them in bedrooms, hallways, living rooms, dining rooms, or even children's rooms. These gorgeously soft felt runners are perfect to bring a bohemian vibe to any area of your house.          collection.<br /><br />Find Your Perfect Rug Today 
+        </p>
+        <a
+          href="#"
+          class="banner-link"
+          style="
+            color: #2a2622;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+            letter-spacing: 1px;
+          "
+          >EXPLORE MORE</a
+        >
+      </div>
+      <div
+        class="banner-img-wrap"
+        style="
+          background-color: #f7f7f7;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+        "
+      >
+        <img
+          style="width: 100%; height: 100%; object-fit: cover"
+          src="https://www.homemonde.in/cdn/shop/files/IMG_0163copy.jpg?v=1757400093"
+          alt="Royal Rug Collection"
+        />
+      </div>
+    </section>
+
+    <!-- Table Runners Section -->
+    <section
+      class="table-runners-section"
+      id="table-runners"
+      style="padding-bottom: 60px"
+    >
+      <div class="container">
+        <div class="section-header text-center">
+          <h2
+            class="section-title-alt"
+            style="margin-bottom: 40px; font-size: 24px; font-weight: 500"
+          >
+            TABLE RUNNERS
+          </h2>
+        </div>
+        <div class="tr-grid">
+          <div class="tr-card">
+            <div class="tr-img-wrap" style="border-radius: 8px">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/IMG_9725copy_ef0afe93-4a9c-4080-906a-09352cca15bc_1024x.jpg"
+                alt="Table Runner grey"
+              />
+            </div>
+            <div class="tr-actions">
+              <button class="btn-add">Choose options</button>
+              <button class="btn-heart" aria-label="Add to wishlist">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="tr-title">
+              Imprimer Quatrefoil - Printed Dining Table Runner (Grey)
+            </h3>
+            <div class="tr-price">₹ 260.00 - ₹ 285.00</div>
+          </div>
+
+          <div class="tr-card">
+            <div class="tr-img-wrap" style="border-radius: 8px">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/IMG_9729copy_1024x.jpg"
+                alt="Table Runner rust"
+              />
+            </div>
+            <div class="tr-actions">
+              <button class="btn-sold">Sold out</button>
+              <button class="btn-heart" aria-label="Add to wishlist">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="tr-title">
+              Imprimer Quatrefoil - Printed Dining Table Runner (Rust)
+            </h3>
+            <div class="tr-price">₹ 345.00</div>
+          </div>
+
+          <div class="tr-card">
+            <div class="tr-img-wrap" style="border-radius: 8px">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/IMG_9737copy_1024x.jpg"
+                alt="Table Runner yellow"
+              />
+            </div>
+            <div class="tr-actions">
+              <button class="btn-add">Choose options</button>
+              <button class="btn-heart" aria-label="Add to wishlist">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="tr-title">
+              Imprimer Quatrefoil - Printed Dining Table Runner (Yellow)
+            </h3>
+            <div class="tr-price">₹ 258.00 - ₹ 294.00</div>
+          </div>
+
+          <div class="tr-card">
+            <div class="tr-img-wrap" style="border-radius: 8px">
+              <img
+                src="https://www.homemonde.in/cdn/shop/files/RN-10a-1-1b-1_1024x.webp"
+                alt="Table Runner multicolor"
+              />
+            </div>
+            <div class="tr-actions">
+              <button class="btn-add">Add to cart</button>
+              <button class="btn-heart" aria-label="Add to wishlist">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <h3 class="tr-title">
+              Earthology - Recycled Table Runner (Multicolor)
+            </h3>
+            <div class="tr-price">₹ 528.00</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <!-- Testimonials Dark Layout -->
+    <section class="reviews-section section-padding" id="testimonials">
+      <div class="container container-md">
+        <div class="reviews-header text-center">
+          <h2>Customers Review</h2>
+          <div class="reviews-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i>
+          </div>
+          <p class="reviews-count">from 390 reviews</p>
+        </div>
+
+        <div class="reviews-slider-wrap">
+          <button class="rs-arrow rs-prev" aria-label="Prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <div class="reviews-slider" id="reviewsSlider">
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <h4 class="review-title">Bed sheet</h4>
+              <p class="review-text">
+                It's really nice look wise and quality is also good..happy for
+                this purchase😃
+              </p>
+              <div class="review-author">Poonam Bhuriya</div>
+              <a href="#" class="review-product">
+                <img
+                  src="https://www.homemonde.in/cdn/shop/files/1_f0209a9e-907d-4367-bd7b-30018ef4faf8.jpg?width=100"
+                  alt="Product"
+                />
+                <span>Imprimer Modern Maze...</span>
+              </a>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <h4 class="review-title">Superb purchase</h4>
+              <p class="review-text">
+                Initially, I was apprehensive to place order seeing the cost at
+                discounted price. But colour lured me.
+              </p>
+              <div class="review-author">Kamlesh</div>
+              <a href="#" class="review-product">
+                <img
+                  src="https://www.homemonde.in/cdn/shop/files/1_fdb02577-d243-4413-b0f7-891230a7060d.jpg?width=100"
+                  alt="Product"
+                />
+                <span>Imprimer Blossom...</span>
+              </a>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <h4 class="review-title">Amazing Bedspread .</h4>
+              <p class="review-text">
+                I Really love the quality of bedspread comes with beautiful
+                prints and colour which totally changed...
+              </p>
+              <div class="review-author">Kiran Negi</div>
+              <a href="#" class="review-product">
+                <img
+                  src="https://www.homemonde.in/cdn/shop/files/1_44e84fa4-154a-4236-ae64-36b77fc139a4.jpg?width=100"
+                  alt="Product"
+                />
+                <span>Imprimer Faces of Co...</span>
+              </a>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <h4 class="review-title">Perfect fitting</h4>
+              <p class="review-text">
+                The mattress protector fits my bed perfectly. Soft and zero
+                noise when moving around.
+              </p>
+              <div class="review-author">Rahul Singh</div>
+              <a href="#" class="review-product">
+                <img
+                  src="https://www.homemonde.in/cdn/shop/files/1_32612bb9-946b-4803-ba42-1571bbf39249.jpg?width=100"
+                  alt="Product"
+                />
+                <span>Fort Terry Mattress P...</span>
+              </a>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <h4 class="review-title">Excellent quality</h4>
+              <p class="review-text">
+                Curtains block the light completely. Love the modern geometric
+                patterns! Highly recommended.
+              </p>
+              <div class="review-author">Simran K.</div>
+              <a href="#" class="review-product">
+                <img
+                  src="https://www.homemonde.in/cdn/shop/files/1_20715113-d8c9-45a6-8256-3551ca115256.jpg?width=100"
+                  alt="Product"
+                />
+                <span>Solid Blackout Curta...</span>
+              </a>
+            </div>
+            <div class="review-card">
+              <div class="review-stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i>
+              </div>
+              <h4 class="review-title">Cute and soft</h4>
+              <p class="review-text">
+                My baby sleeps so well with the printed baby blanket. It is
+                incredibly soft and warm.
+              </p>
+              <div class="review-author">Anjali M.</div>
+              <a href="#" class="review-product">
+                <img
+                  src="https://www.homemonde.in/cdn/shop/files/1_7a7d4e4d-d41b-4b70-bac5-316da2f5d984.jpg?width=100"
+                  alt="Product"
+                />
+                <span>Imprimer Dino...</span>
+              </a>
+            </div>
+          </div>
+          <button class="rs-arrow rs-next" aria-label="Next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/900/900782.png"
+              alt="Delivered"
+            />
+            <h4>10k+</h4>
+            <p>Pin Codes<br />Delivered Globally</p>
+          </div>
+          <div class="stat-item">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/679/679821.png"
+              alt="Orders"
+            />
+            <h4>1.5M+</h4>
+            <p>Orders Successfully<br />Delivered</p>
+          </div>
+          <div class="stat-item">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/9561/9561173.png"
+              alt="Rating"
+            />
+            <h4>96%</h4>
+            <p>Positive Rating<br />from 25k Customers</p>
+          </div>
+          <div class="stat-item">
+            <img
+              src="https://cdn-icons-png.flaticon.com/128/2916/2916315.png"
+              alt="Warehouses"
+            />
+            <h4>88 Warehouses</h4>
+            <p>In India Across 11<br />States</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter & Footer Dark Area -->
+    <section class="newsletter-section">
+      <div class="container container-md">
+        <div class="newsletter-header">
+          <h2>Subscribe to our emails</h2>
+          <p>
+            Be the first to know about new collections and exclusive offers.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Email Address" />
+            <button type="submit">→</button>
+          </form>
+        </div>
+
+        <div class="popular-searches">
+          <p>
+            <strong>Popular Searches In Living Products:</strong> Sheer Curtains
+            | Blackout Curtains | Velvet Curtains | Kids Curtains | Cushion
+            Printed | Hand Block Printed | Polyester Cushion Cover | Satin
+            Stripes | Kantha | Woven Throw
+          </p>
+          <p>
+            <strong>Popular Searches In Bedding Products:</strong> Printed
+            Bedsheets | Solid Bedsheets | Solid Fitted Sheet | Mattress
+            Protector | Quilted Mattress Protector | All Dohar | Printed Dohar |
+            Plush Blanket | Solid Duvet Cover | Printed Duvet Cover
+          </p>
+          <p>
+            <strong>Popular Searches In Flooring Products:</strong> Diamond Rug
+            | Plaid Rugs | Fort Steady Rugs
+          </p>
+          <p>
+            <strong>Popular Searches In Other Products:</strong> Baby Dohar |
+            Baby Blanket | Kids Curtains | All Table Cover | All Table Mat | All
+            Table Runner
+          </p>
+          <p>
+            <strong>Popular Color Searches:</strong> Yellow | Green | Grey |
+            Black | White
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer site-footer" id="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h4>SHOP FOR</h4>
+            <ul>
+              <li><a href="#">Living</a></li>
+              <li><a href="#">Bedding</a></li>
+              <li><a href="#">Dining</a></li>
+              <li><a href="#">Flooring</a></li>
+              <li><a href="#">Trendings</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>RESOURCES</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">HomeMonde Catalogue</a></li>
+              <li><a href="#">B2B Enquiry</a></li>
+              <li><a href="#">Become a partner</a></li>
+              <li><a href="#">Bulk Orders</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Why Choose Homemonde?</a></li>
+              <li><a href="#">HomeMonde App</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>CUSTOMER CARE</h4>
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Shipping & Payment Policy</a></li>
+              <li><a href="#">Return & Refund Policy</a></li>
+              <li><a href="#">FAQ's</a></li>
+              <li><a href="#">Return & Exchange Request</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-newsletter-col">
+            <h4>JOIN OUR VIP LIST TO GET LATEST PRODUCTS UPDATE FIRST</h4>
+            <form class="vip-form">
+              <input type="email" placeholder="Email Address" />
+              <button type="submit">Submit</button>
+            </form>
+            <div class="footer-social-header">FOLLOW US ON</div>
+            <div class="social-links-bubbles">
+              <a href="#" class="social-bbl fb"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-bbl ig"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-bbl in"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="social-bbl wa"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" class="social-bbl yt"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="social-bbl pi"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+            </div>
+            <div class="footer-contact-links">
+              <h4>HAVE ANY QUESTIONS?</h4>
+              <div class="d-flex gap-15">
+                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="#"><i class="fas fa-mobile-alt"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="testimonial-card">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-text">"Best bedsheets I've ever purchased. The cotton is incredibly soft and the colors haven't faded even after multiple washes. Highly recommend!"</p>
-          <div class="testimonial-author">
-            <div>
-              <h4>Ankit Verma</h4>
-              <span>Delhi, India</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p class="testimonial-text">"Found the perfect cushion covers for my new apartment. The designs are elegant and the quality is premium. Outstanding customer service too!"</p>
-          <div class="testimonial-author">
-            <div>
-              <h4>Sneha Patel</h4>
-              <span>Bangalore, India</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Newsletter -->
-  <section class="newsletter-section" id="newsletter">
-    <div class="container">
-      <div class="newsletter-content">
-        <h2 class="section-title">Stay In The Loop</h2>
-        <p>Subscribe to our newsletter for exclusive deals, new arrivals, and home styling tips delivered to your inbox.</p>
-        <form class="newsletter-form" onsubmit="return false;">
-          <input type="email" placeholder="Enter your email address" class="newsletter-input" />
-          <button type="submit" class="btn btn-primary newsletter-btn">Subscribe</button>
-        </form>
-      </div>
-    </div>
-  </section>
+        <div class="footer-bottom-info">
+          <p>
+            Customer Care Email: care@homemonde.com, WhatsApp:+91 8233008561
+          </p>
+          <p>The products displayed on this website are manufactured by:</p>
+          <p>
+            Homemonde Lifestyle Private Limited<br />G-88, near UCO Bank,
+            Sitapura Industrial Area, Sitapura, Jaipur, Rajasthan 302022, India
+          </p>
 
-  <!-- Footer -->
-  <footer class="footer" id="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col footer-brand">
-          <h3 class="footer-logo">HomeMonde</h3>
-          <p>Premium home textiles crafted with love.<br>Making every home beautiful since 2020.</p>
-          <div class="social-links">
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> |
+            <a href="#">Cookies Policy</a>
           </div>
-        </div>
-        <div class="footer-col">
-          <h4>SHOP</h4>
-          <ul>
-            <li><a href="#">Curtains</a></li>
-            <li><a href="#">Bedsheets</a></li>
-            <li><a href="#">Blankets</a></li>
-            <li><a href="#">Cushion Covers</a></li>
-            <li><a href="#">Dohars</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>COMPANY</h4>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>HELP</h4>
-          <ul>
-            <li><a href="#">Shipping Policy</a></li>
-            <li><a href="#">Returns & Exchange</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Track Order</a></li>
-          </ul>
+          <p>&copy; 2026, All Rights Reserved</p>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 HomeMonde. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-        </div>
-      </div>
-    </div>
-  </footer>
 
-  <script src="script.js"></script>
-</body>
+      <div class="footer-sticky-bar">
+        <span>Demo Store</span> |
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/879/879859.png"
+          style="width: 16px; margin: 0 5px"
+          alt="icon"
+        />
+        Get Upto 10% Off Using POPcoins
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

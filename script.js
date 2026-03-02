@@ -1,25 +1,81 @@
 // ========== NAVBAR SCROLL EFFECT ==========
 const navbar = document.getElementById('navbar');
-
 window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
 });
+
+// ========== HERO SLIDER ==========
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+const prevBtn = document.getElementById('sliderPrev');
+const nextBtn = document.getElementById('sliderNext');
+let currentSlide = 0;
+let slideInterval;
+
+function goToSlide(index) {
+  if (slides[currentSlide]) slides[currentSlide].classList.remove('active');
+  if (dots[currentSlide]) dots[currentSlide].classList.remove('active');
+  currentSlide = (index + slides.length) % slides.length;
+  if (slides[currentSlide]) slides[currentSlide].classList.add('active');
+  if (dots[currentSlide]) dots[currentSlide].classList.add('active');
+}
+
+function nextSlide() { goToSlide(currentSlide + 1); }
+function prevSlide() { goToSlide(currentSlide - 1); }
+
+function startAutoSlide() {
+  slideInterval = setInterval(nextSlide, 5000);
+}
+
+function resetAutoSlide() {
+  clearInterval(slideInterval);
+  startAutoSlide();
+}
+
+if (prevBtn && nextBtn) {
+  prevBtn.addEventListener('click', () => { prevSlide(); resetAutoSlide(); });
+  nextBtn.addEventListener('click', () => { nextSlide(); resetAutoSlide(); });
+}
+
+dots.forEach((dot, i) => {
+  dot.addEventListener('click', () => { goToSlide(i); resetAutoSlide(); });
+});
+
+startAutoSlide();
+
+// ========== SLIDERS COMMON LOGIC ==========
+function setupHorizontalSlider(prevBtnClass, nextBtnClass, sliderClass, scrollAmount) {
+  const prevBtns = document.querySelectorAll(`.${prevBtnClass}`);
+  const nextBtns = document.querySelectorAll(`.${nextBtnClass}`);
+
+  prevBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const slider = btn.parentElement.querySelector(`.${sliderClass}`);
+      slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+  });
+
+  nextBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const slider = btn.parentElement.querySelector(`.${sliderClass}`);
+      slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+  });
+}
+
+setupHorizontalSlider('ps-prev', 'ps-next', 'product-slider', 320);
+setupHorizontalSlider('rs-prev', 'rs-next', 'reviews-slider', 350);
 
 // ========== MOBILE SIDEBAR ==========
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const mobileSidebar = document.getElementById('mobileSidebar');
 const sidebarOverlay = document.getElementById('sidebarOverlay');
-const closeSidebar = document.getElementById('closeSidebar');
+const closeSidebarBtn = document.getElementById('closeSidebar');
 
 function openSidebar() {
   mobileSidebar.classList.add('active');
   sidebarOverlay.classList.add('active');
   document.body.style.overflow = 'hidden';
-  // Always ensure main panel is visible first
   showPanel('mainPanel');
 }
 
@@ -30,36 +86,24 @@ function closeSidebarMenu() {
 }
 
 function showPanel(panelId) {
-  const panels = document.querySelectorAll('.sidebar-panel');
-  panels.forEach(p => p.classList.remove('active'));
-  document.getElementById(panelId).classList.add('active');
+  document.querySelectorAll('.sidebar-panel').forEach(p => p.classList.remove('active'));
+  const panel = document.getElementById(panelId);
+  if (panel) panel.classList.add('active');
 }
 
-mobileMenuBtn.addEventListener('click', openSidebar);
-closeSidebar.addEventListener('click', closeSidebarMenu);
-sidebarOverlay.addEventListener('click', closeSidebarMenu);
+if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openSidebar);
+if (closeSidebarBtn) closeSidebarBtn.addEventListener('click', closeSidebarMenu);
+if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeSidebarMenu);
 
-// Level Navigation Logic
 document.querySelectorAll('.trigger-panel').forEach(trigger => {
-  trigger.addEventListener('click', () => {
-    const targetId = trigger.getAttribute('data-target');
-    showPanel(targetId);
-  });
+  trigger.addEventListener('click', () => showPanel(trigger.getAttribute('data-target')));
 });
 
 document.querySelectorAll('.back-header').forEach(back => {
-  back.addEventListener('click', () => {
-    const backId = back.getAttribute('data-back');
-    showPanel(backId);
-  });
+  back.addEventListener('click', () => showPanel(back.getAttribute('data-back')));
 });
 
-// ========== SCROLL REVEAL ANIMATION ==========
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
-};
-
+// ========== SCROLL REVEAL ==========
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -67,35 +111,13 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, observerOptions);
+}, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 
-// Observe sections
 document.addEventListener('DOMContentLoaded', () => {
-  // Add fade-in to section elements
-  const elementsToAnimate = document.querySelectorAll(
-    '.section-header, .category-card, .product-card, .story-grid, .testimonial-card, .newsletter-content'
-  );
-
-  elementsToAnimate.forEach((el, index) => {
+  document.querySelectorAll(
+    '.section-header, .category-card, .product-card, .split-banner, .testimonial-card'
+  ).forEach(el => {
     el.classList.add('fade-in');
-    el.style.transitionDelay = `${index * 0.05}s`;
     observer.observe(el);
-  });
-});
-
-// ========== WISHLIST TOGGLE ==========
-document.querySelectorAll('.wishlist-btn').forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    const icon = btn.querySelector('i');
-    if (icon.classList.contains('far')) {
-      icon.classList.remove('far');
-      icon.classList.add('fas');
-      icon.style.color = '#D17147';
-    } else {
-      icon.classList.remove('fas');
-      icon.classList.add('far');
-      icon.style.color = '';
-    }
   });
 });
